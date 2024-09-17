@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Result Management System</h1>
+        
+        <!-- Form to add student details -->
+        <div class="form-section">
+            <h2>Add Student</h2>
+            <form id="studentForm">
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" required>
+
+                <label for="class">Class:</label>
+                <input type="text" id="class" required>
+
+                <label for="subject1">Subject 1 Marks:</label>
+                <input type="number" id="subject1" min="0" max="100" required>
+
+                <label for="subject2">Subject 2 Marks:</label>
+                <input type="number" id="subject2" min="0" max="100" required>
+
+                <label for="subject3">Subject 3 Marks:</label>
+                <input type="number" id="subject3" min="0" max="100" required>
+
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+
+        <!-- Section to display student results -->
+        <div class="result-section">
+            <h2>Student Results</h2>
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>Roll Number</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Subject 1</th>
+                        <th>Subject 2</th>
+                        <th>Subject 3</th>
+                        <th>Total Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student results will be appended here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
